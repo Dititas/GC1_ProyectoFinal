@@ -1,0 +1,8 @@
+﻿cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  WinMaincpp.cpp
+WinMaincpp.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/SAFESEH'
+WinMaincpp.obj : error LNK2019: símbolo externo "public: __thiscall CGfxOpenGL::CGfxOpenGL(void)" (??0CGfxOpenGL@@QAE@XZ) sin resolver al que se hace referencia en la función _WinMain@16
+WinMaincpp.obj : error LNK2019: símbolo externo "public: bool __thiscall CGfxOpenGL::Init(void)" (?Init@CGfxOpenGL@@QAE_NXZ) sin resolver al que se hace referencia en la función _WinMain@16
+WinMaincpp.obj : error LNK2019: símbolo externo "public: void __thiscall CGfxOpenGL::SetupProjection(int,int)" (?SetupProjection@CGfxOpenGL@@QAEXHH@Z) sin resolver al que se hace referencia en la función "long __stdcall MainWindowProc(struct HWND__ *,unsigned int,unsigned int,long)" (?MainWindowProc@@YGJPAUHWND__@@IIJ@Z)
+WinMaincpp.obj : error LNK2019: símbolo externo "public: void __thiscall CGfxOpenGL::Render(void)" (?Render@CGfxOpenGL@@QAEXXZ) sin resolver al que se hace referencia en la función "long __stdcall MainWindowProc(struct HWND__ *,unsigned int,unsigned int,long)" (?MainWindowProc@@YGJPAUHWND__@@IIJ@Z)
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\Debug\PF_GC1.exe : fatal error LNK1120: 4 externos sin resolver
