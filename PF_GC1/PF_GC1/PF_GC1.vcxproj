@@ -86,17 +86,18 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;SAFESEH;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>Default</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)Dependecies/glew-2.1.0/include;$(ProjectDir)Dependecies/freeglut-3.0.0/include;$(ProjectDir)Dependecies/glfw-3.3.2.bin.WIN32/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependecies/glew-2.1.0/include;$(ProjectDir)Dependecies/freeglut-3.0.0/include;$(ProjectDir)Dependecies/glfw-3.3.2.bin.WIN32/include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\gl</AdditionalIncludeDirectories>
       <SupportJustMyCode>false</SupportJustMyCode>
       <MinimalRebuild>true</MinimalRebuild>
       <PrecompiledHeader />
+      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>winmm.lib;opengl32.lib;glew.lib;freeglutd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gdiplus.lib;winmm.lib;opengl32.lib;glew.lib;freeglutd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)Dependecies/freeglut-3.0.0/lib;$(ProjectDir)Dependecies/glfw-3.3.2.bin.WIN32/lib-vc2019;$(ProjectDir)Dependecies/glew-2.1.0/lib/Release/Win32</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
     </Link>
@@ -107,18 +108,19 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;SAFESEH;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>Default</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)Dependecies/glew-2.1.0/include;$(ProjectDir)Dependecies/freeglut-3.0.0/include;$(ProjectDir)Dependecies/glfw-3.3.2.bin.WIN32/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependecies/glew-2.1.0/include;$(ProjectDir)Dependecies/freeglut-3.0.0/include;$(ProjectDir)Dependecies/glfw-3.3.2.bin.WIN32/include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\gl</AdditionalIncludeDirectories>
       <MinimalRebuild>true</MinimalRebuild>
       <PrecompiledHeader />
+      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>winmm.lib;opengl32.lib;glew.lib;freeglutd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gdiplus.lib;winmm.lib;opengl32.lib;glew.lib;freeglutd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)Dependecies/freeglut-3.0.0/lib;$(ProjectDir)Dependecies/glfw-3.3.2.bin.WIN32/lib-vc2019;$(ProjectDir)Dependecies/glew-2.1.0/lib/Release/Win32</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -151,10 +153,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CPP\CGfxOpenGL.cpp" />
+    <ClCompile Include="CPP\glm.cpp" />
+    <ClCompile Include="CPP\glmimg.cpp" />
+    <ClCompile Include="CPP\Texture.cpp" />
     <ClCompile Include="CPP\WinMaincpp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Headers\cargaImgs.h" />
+    <ClInclude Include="Headers\cargaOps.h" />
     <ClInclude Include="Headers\CGfxOpenGL.h" />
+    <ClInclude Include="Headers\GL.h" />
+    <ClInclude Include="Headers\glext.h" />
+    <ClInclude Include="Headers\glm.h" />
+    <ClInclude Include="Headers\Matrices.h" />
+    <ClInclude Include="Headers\stdafx.h" />
+    <ClInclude Include="Headers\Texture.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
