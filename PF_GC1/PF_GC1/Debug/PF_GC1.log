@@ -1,8 +1,310 @@
 ﻿cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
-  WinMaincpp.cpp
-WinMaincpp.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/SAFESEH'
-WinMaincpp.obj : error LNK2019: símbolo externo "public: __thiscall CGfxOpenGL::CGfxOpenGL(void)" (??0CGfxOpenGL@@QAE@XZ) sin resolver al que se hace referencia en la función _WinMain@16
-WinMaincpp.obj : error LNK2019: símbolo externo "public: bool __thiscall CGfxOpenGL::Init(void)" (?Init@CGfxOpenGL@@QAE_NXZ) sin resolver al que se hace referencia en la función _WinMain@16
-WinMaincpp.obj : error LNK2019: símbolo externo "public: void __thiscall CGfxOpenGL::SetupProjection(int,int)" (?SetupProjection@CGfxOpenGL@@QAEXHH@Z) sin resolver al que se hace referencia en la función "long __stdcall MainWindowProc(struct HWND__ *,unsigned int,unsigned int,long)" (?MainWindowProc@@YGJPAUHWND__@@IIJ@Z)
-WinMaincpp.obj : error LNK2019: símbolo externo "public: void __thiscall CGfxOpenGL::Render(void)" (?Render@CGfxOpenGL@@QAEXXZ) sin resolver al que se hace referencia en la función "long __stdcall MainWindowProc(struct HWND__ *,unsigned int,unsigned int,long)" (?MainWindowProc@@YGJPAUHWND__@@IIJ@Z)
-C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\Debug\PF_GC1.exe : fatal error LNK1120: 4 externos sin resolver
+  CGfxOpenGL.cpp
+  Nota: inclusión del archivo: C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\windows.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winapifamily.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winpackagefamily.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\sdkddkver.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\excpt.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vcruntime.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\sal.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\concurrencysal.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vadefs.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\stdarg.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\windef.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\specstrings.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\specstrings_strict.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\specstrings_undef.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\driverspecs.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\sdv_driverspecs.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\kernelspecs.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\basetsd.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\guiddef.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h
+  Nota: inclusión del archivo:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memory.h
+  Nota: inclusión del archivo:        C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+  Nota: inclusión del archivo:         C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h
+  Nota: inclusión del archivo:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vcruntime_string.h
+  Nota: inclusión del archivo:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack4.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack4.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack4.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack4.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack2.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack2.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack2.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack8.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\apiset.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\ktmtypes.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\apisetcconv.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\minwinbase.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\apiquery2.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\processenv.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\fileapifromapp.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\fileapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\debugapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\utilapiset.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\handleapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\errhandlingapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\fibersapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\namedpipeapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\profileapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\heapapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\ioapiset.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\interlockedapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\processthreadsapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\sysinfoapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\memoryapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\enclaveapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\threadpoollegacyapiset.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\threadpoolapiset.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\jobapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\jobapi2.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\wow64apiset.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\libloaderapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\securitybaseapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\namespaceapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\systemtopologyapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\processtopologyapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\securityappcontainer.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\realtimeapiset.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\timezoneapi.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\wingdi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack2.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack2.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack4.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack4.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack2.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\tvout.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\datetimeapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\stringapiset.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\wincon.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\wincontypes.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\consoleapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\consoleapi2.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\consoleapi3.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winver.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\verrsrc.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winreg.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\reason.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnetwk.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\wnnc.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\cderr.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\dde.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\ddeml.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\dlgs.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\lzexpand.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmsystem.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmsyscom.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mciapi.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmsyscom.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmiscapi.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmsyscom.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmiscapi2.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmsyscom.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\playsoundapi.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmsyscom.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmeapi.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmsyscom.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\timeapi.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmsyscom.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\joystickapi.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mmsyscom.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\nb30.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\rpc.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\rpcdce.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\rpcdcep.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\rpcnsi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\rpcnterr.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\rpcasync.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\shellapi.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winperf.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack8.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\inaddr.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\wincrypt.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\bcrypt.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\ncrypt.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\dpapi.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winefs.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winscard.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\wtypes.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\rpcndr.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack8.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\rpcnsip.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\rpcsal.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\wtypesbase.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\guiddef.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winioctl.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winsmcrd.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winspool.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\prsht.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack4.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\ole2.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack8.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\objbase.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack8.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\combaseapi.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack8.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_malloc.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_search.h
+  Nota: inclusión del archivo:       C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\limits.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\unknwnbase.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\objidlbase.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\guiddef.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\cguid.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\coml2api.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\objidl.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\unknwn.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\propidlbase.h
+  Nota: inclusión del archivo:      C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\oaidl.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\urlmon.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\oleidl.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\servprov.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\msxml.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\propidl.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\oleauto.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack8.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\commdlg.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\prsht.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack1.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\stralign.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsvc.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\mcx.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\imm.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\ime_cmodes.h
+  Nota: inclusión del archivo: C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\gl/gl.h
+  Nota: inclusión del archivo: C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\gl/glu.h
+  Nota: inclusión del archivo: C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\math.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h
+  Nota: inclusión del archivo: C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\CPP\../Headers/Matrices.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\Math.h
+  Nota: inclusión del archivo:  C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\GL.h
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(122,27): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(123,27): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(124,27): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(130,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(131,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(132,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(133,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(135,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(136,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(137,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(138,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(140,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(141,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(142,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\Matrices.h(143,21): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Nota: inclusión del archivo: C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\CPP\../Headers/CGfxOpenGL.h
+  Nota: inclusión del archivo: C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\CPP\../Headers/Texture.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\windowsx.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+  Nota: inclusión del archivo:  C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Dependecies\freeglut-3.0.0\include\GL/glut.h
+  Nota: inclusión del archivo:   C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Dependecies\freeglut-3.0.0\include\GL\freeglut_std.h
+  Nota: inclusión del archivo:  C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\GL.h
+  Nota: inclusión del archivo:  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\math.h
+  Nota: inclusión del archivo: C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\CPP\../Headers/glm.h
+  Nota: inclusión del archivo:  C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\GL.h
+  Nota: inclusión del archivo: C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\CPP\../Headers/cargaOps.h
+  Nota: inclusión del archivo:  C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\glext.h
+  Nota: inclusión del archivo:  C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\cargaImgs.h
+  Nota: inclusión del archivo:   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\gdiplus.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack8.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMem.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBase.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusEnums.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusTypes.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusInit.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusPixelFormats.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusColor.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetaHeader.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\pshpack2.h
+  Nota: inclusión del archivo:     C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusColorMatrix.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusGpStubs.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImageAttributes.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMatrix.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBrush.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusPen.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusStringFormat.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusPath.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusLineCaps.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusGraphics.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusCachedBitmap.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusRegion.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFontCollection.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFontFamily.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFont.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImageCodec.h
+  Nota: inclusión del archivo:    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\poppack.h
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\cargaOps.h(212,24): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\Headers\cargaOps.h(213,28): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\PF_GC1\CPP\CGfxOpenGL.cpp(25,25): warning C4305: 'inicializando': truncamiento de 'double' a 'GLfloat'
+  PF_GC1.vcxproj -> C:\Users\Ditit\OneDrive\Escritorio\Abdias\7_Semestre\Materias\Gráficas Computacionales 1\ProyectoFinal_GC1\PF_GC1\Debug\PF_GC1.exe
